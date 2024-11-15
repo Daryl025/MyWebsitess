@@ -104,7 +104,13 @@ section:hover{
     background-color:yellow;           /*Set background color of footer*/
  }
  
-
+ #numbers{
+    gap: 4%;
+    font-size:22px ;
+    display: flex;
+    font-weight: bold;
+    color: blueviolet;
+ }
 
 
  
@@ -257,12 +263,7 @@ section:hover{
         display: flex;
        justify-content: center;
     }
-    #numbers{
-        gap: 4%;
-        font-size:22px ;
-        display: flex;
-        font-weight: bold;
-        color: blueviolet;
+    
       
     ul{
         font-size: 1.5rem; /*font-size adjustment for unordered list*/
