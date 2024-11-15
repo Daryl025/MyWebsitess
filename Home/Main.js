@@ -16,5 +16,15 @@ console.log(FullDate);
 const CopyrightElement= document.getElementById("Copyright");
 
 //Update the content with the new year
-CopyrightElement.innerHTML=`&copy; Daryl Tchouala,${CurrentYear}`; // used innerHTML because i used (&copy) which 
-                                                                   // is an HTML entity
+CopyrightElement.innerHTML=`&copy; Daryl Tchouala,${CurrentYear}`; // used innerHTML because i used (&copy) which   is an HTML entity
+                                                                  
+
+// get button by its id
+const ButtonElement= document.getElementById("Btn-alert");
+
+//add an event listener to the button
+ButtonElement.addEventListener('click', function() {
+
+    // when the button is clicked show the alert message
+    alert("You're about to learn more about this site. Have fun reading"); 
+});                                              
