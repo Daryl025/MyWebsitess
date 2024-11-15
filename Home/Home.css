@@ -117,6 +117,17 @@ section:hover{
     background-color:yellow;           /*Set background color of footer*/
  }
  
+ #Btn-alert{
+    text-decoration: none;   /*Remove underline from link*/
+    background-color: #305bff;  /*Set background color of button*/
+    display: flex;                /*Flexbox layout*/
+    position: absolute;           /*Position the button*/
+    right: 9%;                    /*pastion button on the right end*/
+    border-radius: 5px;            /*setting buttons border radius*/
+    color: white;                /*White text color*/
+    padding: 5px;                  /*Padding inside the button*/
+    font-size: 20px;               /*Font size*/
+ }
  
   /*smaller screens(mobile devices)*/
   @media(max-width:480px){
@@ -197,7 +208,7 @@ section:hover{
  /*For Laptops*/
  @media screen and (min-width:769px){
     h1{
-        font-size: 1.8;
+        font-size: 1.8rem;
     }
     h2,h3{
         font-size: 1.6rem; /*slightly smaller headings mobile devices */
@@ -259,7 +270,7 @@ section:hover{
        
     }
     .button{
-        font-size: 1 rem; /*increase button font-size*/
+        font-size: 2px; /*increase button font-size*/
         padding: 2px;
     }
     footer{
