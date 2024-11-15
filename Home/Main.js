@@ -41,3 +41,28 @@ ButtonElement.onmouseout=function(){
     ButtonElement.innerText="Click Me!"; // changing text
     console.log("Mouse out: Buttun text revrts to Orginal form");
 };
+
+// this fuction runs when the page is loaded 
+window.onload = function(){
+
+// getting current hour using the date() method 
+const CurrentHour= new Date().getHours();
+
+//log the current hours to the console 
+console.log("current hour" + CurrentHour);
+
+//using conditional if/else to display the appr..te greeting in the alert box
+if (CurrentHour < 12) {
+    //before 12 PM - Good morning
+    alert("Good Morning!");
+    console.log("Greeting:Good Morning!");
+} else if (CurrentHour >= 12 && CurrentHour < 17) {
+    // between 12 PM and 5 PM - Goog Afternoon
+    alert("Good afternoon!");
+    console.log("Greeting:Good Afternoon!");
+} else {
+    //after 5PM - Good Evening
+    alert("Good Evening!");
+    console.log("Greeting:Good Evening!");
+}
+};
