@@ -28,3 +28,16 @@ ButtonElement.addEventListener('click', function() {
     // when the button is clicked show the alert message
     alert("You're about to learn more about this site. Have fun reading"); 
 });                                              
+
+
+// Changing button text when mouse hovers over it
+ButtonElement.onmouseover=function(){
+    ButtonElement.innerText="Changed because you're Hovering"; // changing text
+    console.log("Mouse Over: Buttun text changed to 'Changed because you're Hovering' ");
+};
+
+// Revertiing button text when mouse stops to hover over it
+ButtonElement.onmouseout=function(){
+    ButtonElement.innerText="Click Me!"; // changing text
+    console.log("Mouse out: Buttun text revrts to Orginal form");
+};
