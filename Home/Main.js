@@ -48,21 +48,26 @@ window.onload = function(){
 // getting current hour using the date() method 
 const CurrentHour= new Date().getHours();
 
+//get element by id where the greeting elemnrt is displayed
+const  GreetingElement= document.getElementById('Greeting');
+
 //log the current hours to the console 
 console.log("current hour" + CurrentHour);
 
 //using conditional if/else to display the appr..te greeting in the alert box
 if (CurrentHour < 12) {
     //before 12 PM - Good morning
-    alert("Good Morning!");
-    console.log("Greeting:Good Morning!");
+    GreetingElement.innerText="Good Morning!";
+    GreetingElement.classList.add("morning"); // Add the morning Class
+    console.log("Greeting:Good Morning!"); 
+
 } else if (CurrentHour >= 12 && CurrentHour < 17) {
     // between 12 PM and 5 PM - Goog Afternoon
-    alert("Good afternoon!");
-    console.log("Greeting:Good Afternoon!");
+    GreetingElement.innerText="Good Afternoon!";
+    GreetingElement.classList.add("afternoon"); // Add the afternoon Class
 } else {
     //after 5PM - Good Evening
-    alert("Good Evening!");
-    console.log("Greeting:Good Evening!");
+    GreetingElement.innerText="Good Evening!";
+    GreetingElement.classList.add("evening"); // Add the afternoon Class
 }
 };
