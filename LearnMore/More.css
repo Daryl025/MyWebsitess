@@ -45,7 +45,7 @@ ol{
     display: flex;                 /*Flex layout for left section*/
     text-wrap: nowrap;             /*Prevent text wrap*/
     gap: 28%;                      /*set gap between list items*/
-    padding-left:10 px;            /*add padding to the left*/
+    padding-left:10px;            /*add padding to the left*/
     padding-bottom: 5px;           /*Adding padding to the bottom*/
 }
 /*Button styling*/
@@ -89,7 +89,7 @@ section:hover{
     font-style: normal;                   /*Normal fonts style*/
   }
  p,caption{
-    font-size: 1.5 em;              /*Set font size for paragraphs and captions*/
+    font-size: 1.5em;              /*Set font size for paragraphs and captions*/
     font-weight: bold;              /*set bold font weight*/
     padding: 5px;                   /*content padding*/
  } 
@@ -196,7 +196,7 @@ section:hover{
  /*For Laptops*/
  @media screen and (min-width:769px){
     h1{
-        font-size: 1.8;
+        font-size: 1.8rem;
     }
     h2,h3{
         font-size: 1.6rem; /*slightly smaller headings mobile devices */
@@ -257,12 +257,19 @@ section:hover{
         display: flex;
        justify-content: center;
     }
+    #numbers{
+        gap: 4%;
+        font-size:22px ;
+        display: flex;
+        font-weight: bold;
+        color: blueviolet;
+      
     ul{
         font-size: 1.5rem; /*font-size adjustment for unordered list*/
        
     }
     .button{
-        font-size: 1.8 rem; /*increase button font-size*/
+        font-size: 1.8rem; /*increase button font-size*/
         padding: 5px;
     }
     footer{
