@@ -128,6 +128,26 @@ section:hover{
     padding: 5px;                  /*Padding inside the button*/
     font-size: 20px;               /*Font size*/
  }
+ h4{
+    display: flex;
+    position: absolute;
+    left: 1%;
+    font-size: larger;
+ }
+
+ .morning{
+    background-color: lightyellow;
+    color:  rgb(8, 194, 8);
+ }
+
+ .afternoon{
+    background-color: lightgoldenrodyellow;
+    color: darkgreen;
+ }
+ .evening{
+    background-color: darkblue;
+    color: white;
+ }
  
   /*smaller screens(mobile devices)*/
   @media(max-width:480px){
